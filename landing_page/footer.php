@@ -20,3 +20,21 @@
 </body>
 
 </html>
+<script>
+    $(document).ready(function(){
+       $(document).on('click', '#showPassword', function(){
+        let state = $(this).attr('data-id');
+        if(state == 'off'){
+            // $(this).data('id', 'on');
+            $(this).attr('data-id', 'on');
+            $('#password').attr('type', 'text');
+            $(this).html('<i class="fas fa-eye-slash"></i>');
+        }else{
+            // $(this).data('id', 'off');
+            $(this).attr('data-id', 'off');
+            $('#password').attr('type', 'password');
+            $(this).html('<i class="fas fa-eye"></i>');
+        }
+       });
+    });
+</script>
