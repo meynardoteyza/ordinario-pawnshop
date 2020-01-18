@@ -1,5 +1,5 @@
 <?php
-include('header.php');
+include('includes/header.php');
 ?>
 <style>
     @media(min-width: 576px){
@@ -43,7 +43,7 @@ include('header.php');
                 Add Pawn
             </div>
             <div class="card-body text-center">
-                <section class="batch1" style="display:none">
+                <section class="batch1">
                     <h5 class="text-center mb-4">Ticket Details</h5>
                     <hr>
                     <div class="col-xl-12 row">
@@ -257,7 +257,7 @@ include('header.php');
                 </section>
 
                            <!-- Computation Tab -->
-                <section class="batch4">
+                <section class="batch4" style="display:none">
                     <h5 class="text-center mb-4">Computation</h5>
                     <hr>
                     <div class="col-xl-12 container">
@@ -316,7 +316,7 @@ include('header.php');
 </div>
 
 <?php
-include('footer.php')
+include('includes/footer.php')
 ?>
 
 <script>
@@ -336,7 +336,7 @@ include('footer.php')
         });
 
         $('#next3').on('click', function(){
-            // $('.batch2').toggle("slide");
+            $('.batch4').toggle("slide");
             $('.batch3').toggle("slide");
             $('.progress-bar').css('width', '75%');
             $('.progress-bar').text('75%')

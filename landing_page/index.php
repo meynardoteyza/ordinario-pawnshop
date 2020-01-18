@@ -1,6 +1,6 @@
 
  <?php
-  require('header.php');
+  require('includes/header.php');
  ?>
  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -22,7 +22,7 @@
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="sign_in.php">Sign In</a>
+            <a class="nav-link js-scroll-trigger" href="pages/sign_in.php">Sign In</a>
           </li>
         </ul>
       </div>
@@ -131,5 +131,5 @@
   </section>
 
 <?php
-include('footer.php');
+include('includes/footer.php');
 ?>
